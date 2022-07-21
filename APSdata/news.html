@@ -1,0 +1,189 @@
+<!-- api yt  https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=news &key=AIzaSyA0RZ429CLkK4e-UF7yyszV_2KlMioW5wk     -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../APSdata/allCommon.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <link rel="stylesheet" href="./Importer/news.css">
+
+
+
+</head>
+
+<body>
+    <div id="bigContainerss">
+
+        <div id="navbar"></div>
+        <div id="slideerAre">
+
+            <section class="slider" id="box">
+                <div>
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1199,h_480,c_scale,f_webp,q_auto:eco/resources/0-101-10z5117550/cover/indiatoday21170mobile796f7c368e6a4379bd7ec0cb22b5bc08.jpg"
+                        alt="">
+                    <h1 id="gadha">Janhit Me Jaari</h1>
+                    <div id="ghoda">
+                        <button><a href="">WATCH</a></button>
+                        <button><a href="">BUY PLAN</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1199,h_480,c_scale,f_webp,q_auto:eco/resources/0-101-externall_1224347986/cover/newsx1170mobile16f6cab9792e45dba83e6f25c37d0b5c.jpg"
+                        alt="">
+                    <h1 id="gadha">Forensic</h1>
+                    <div id="ghoda">
+                        <button><a href="">WATCH</a></button>
+                        <button><a href="">BUY PLAN</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1420,h_569,c_scale,f_webp,q_auto:eco/resources/0-101-externall_1904997942/cover/wion1170mobile9f7bc05c9aef47168ed32ae8d5d4f200.jpg"
+                        alt="">
+                    <h1 id="gadha">Saas Bahu Achaar Pvt. Ltd.</h1>
+                    <div id="ghoda">
+                        <button><a href="">WATCH</a></button>
+                        <button><a href="">BUY PLAN</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1420,h_569,c_scale,f_webp,q_auto:eco/resources/0-101-10z583582/cover/timesnownavbharat1170mobile52715ea62f8442e1afec82cc0be9f70c.jpg"
+                        alt="">
+                    <h1 id="gadha">Kolkatar Harry</h1>
+                    <div id="ghoda">
+                        <button><a href="">WATCH</a></button>
+                        <button><a href="">BUY PLAN</a></button>
+                    </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <!-- my phase..............................start from >>>>>>>>>>>....................................... -->
+
+        <h2>Free Live News Channels</h2>
+        <div class="row4">
+
+            <div><img class="posteR4"
+                    src="https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_webp,q_auto:eco/resources/0-9-24ghantatv/list/anchorbanners117074b09be61e5a4f27b38cbbdc9527fc02.jpg"
+                    alt="">
+
+
+            </div>
+            <div><img class="posteR4"
+                    src="https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_webp,q_auto:eco/resources/0-9-402/list/abpananda1170326ed9e75816a6456b9e713f1f5bf83cc7.jpg"
+                    alt="">
+
+            </div>
+            <div><img class="posteR4"
+                    src="https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_webp,q_auto:eco/resources/0-9-aajtak/list/aajtak11704b0fb9d504e24144aa1bb610911f543b.jpg"
+                    alt="">
+
+            </div>
+            <div><img class="posteR4"
+                    src="https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_webp,q_auto:eco/resources/0-9-indiatoday/list/indiatodayrajeevsardesdai1170fa2bd800092a4d5c990afa2364e6015d.jpg"
+                    alt="">
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- .....................................................yt............................................... -->
+        <h2>Heading</h2>
+
+        <div id="newsdiv"></div>
+
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    async function newsData() {
+
+        let url = ` https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=news &key=AIzaSyAVPfcP0gaguOuUuB7iFFZ5cCRUhhF28xA`
+
+
+
+        let res = await fetch(url)
+        let data = await res.json()
+        console.log(data.items)
+
+        append(data.items)
+    }
+    newsData()
+
+
+    function append(data) {
+
+        let container = document.getElementById("newsdiv");
+        container.innerHTML = null
+
+        data.forEach(({ id: { videoId }, snippet: { title, thumbnails } }) => {
+            let div = document.createElement("div");
+
+            let iframe = document.createElement("iframe");
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            iframe.allow = "fullscreen";
+            let h3 = document.createElement("h3");
+            h3.setAttribute("class", "titlebar")
+            h3.innerText = title;
+
+            div.append(iframe, h3);
+
+            let video = {
+                title,
+                videoId,
+            };
+
+            div.onclick = () => {
+                playVideo(video);
+            };
+
+            container.append(div);
+        });
+        //................................................................
+
+    };
+
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $('.slider').slick({
+        arrows: true,
+        infinite: true,
+    });
+</script>
+
+
+<!-- navbar and footer section missing....................................................... -->
