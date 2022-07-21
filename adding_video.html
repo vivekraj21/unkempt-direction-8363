@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+     
+<style>
+   
+    #box img{
+        height: 520px;
+        width: 1550px;
+       padding-bottom: 0px;
+    
+    }
+    .slider .slick-next{
+        position: absolute;
+        bottom: 380px;
+        right: 0%;
+        color:white;
+        width: 50px;
+        height: 50px;
+        background:none;
+        border-color:transparent;
+        border-radius: 50%;
+        text-align: centre;
+        line-height: 50px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .slider .slick-prev{
+        position:absolute;
+        bottom: 380px;
+        right: 95%;
+        color:white;
+        width: 70px;
+        height: 50px;
+        background:none;
+        border-color:transparent;
+        border-radius: 50%;
+        text-align: centre;
+        line-height: 50px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #gadha{
+        position: absolute;
+        bottom: 160px;
+        margin-left: 50px;
+        color: white;
+        font-size:40px;
+        z-index: 2;
+    }
+    #ghoda{
+        position: absolute;
+        bottom: 130px;
+        margin-left: 50px;
+        z-index: 2;
+    }
+    #ghoda button{
+        padding: 10px 10px 10px 10px;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 5px;
+    }
+    #ghoda button:nth-child(2){
+        padding: 10px 10px 10px 10px;
+        background-color:rgb(130,48,198);
+        border-color: rgb(130,48,198);
+        border-radius: 5px;
+    }
+
+    #ghoda button {
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+    }
+    #ghoda button a{
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body >
+    
+    <section class="slider" id="box">
+        <div>
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/cover/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="">
+            <h1 id="gadha">Forensic</h1>
+            <div id="ghoda">
+                <button  onclick="mouse12()" value="forensic zee5 trailer" id="ghodavalue12">WATCH</button>
+                <button><a href="">BUY PLAN</a></button>
+           </div>
+           </div>
+       <div>
+        <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/cover/1920x7709b5906f9ab1347e7915762097af21c2e.jpg" alt="">
+        <h1 id="gadha">Dhaakad</h1>
+        <div id="ghoda">
+            <button  onclick="mouse11()" value="dhaakad zee5 Trailer" id="ghodavalue11">WATCH</button>
+            <button><a href="">BUY PLAN</a></button>
+           </div>
+       </div>
+       
+       <div>
+        <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/cover/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="">
+        <h1 id="gadha">Saas Bahu Achaar Pvt. Ltd.</h1>
+        <div id="ghoda">
+            <button  onclick="mouse13()" value="Saas bahu achaar pvt. ltd. Trailer" id="ghodavalue13">WATCH</button>
+            <button><a href="">BUY PLAN</a></button>
+       </div>
+       </div>
+       <div>
+        <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181170/cover/kolkatarharrypfp1ag1920x7703006202292aa8db204a04f3abb26e3ca7d636271.jpg" alt="">
+        <h1 id="gadha">Kolkatar Harry</h1>
+        <div id="ghoda">
+            <button  onclick="mouse14()" value="Kolkatar Harry Trailer" id="ghodavalue14">WATCH</button>
+            <button><a href="">BUY PLAN</a></button>
+       </div>
+       
+    </section>
+    
+
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+            arrows:true,
+            infinite:true,
+        });
+    </script>
+</body>
+</html>
+
+<script>
+    function mouse11(){
+       value = document.querySelector("#ghodavalue11").value
+       console.log(value);
+       localStorage.setItem("movie_name",JSON.stringify(value));
+       window.location.href = "video.html"
+    }
+    function mouse12(){
+       value = document.querySelector("#ghodavalue12").value
+       console.log(value);
+       localStorage.setItem("movie_name",JSON.stringify(value));
+       window.location.href = "video.html"
+    }
+    function mouse13(){
+       value = document.querySelector("#ghodavalue13").value
+       console.log(value);
+       localStorage.setItem("movie_name",JSON.stringify(value));
+       window.location.href = "video.html"
+    }
+    function mouse14(){
+       value = document.querySelector("#ghodavalue14").value
+       console.log(value);
+       localStorage.setItem("movie_name",JSON.stringify(value));
+       window.location.href = "video.html"
+    }
+</script>
