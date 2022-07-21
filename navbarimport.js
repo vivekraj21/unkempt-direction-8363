@@ -8,3 +8,11 @@ plan.addEventListener("click",function(){
 
     console.log("my");
 })
+
+document.querySelector("#plan").addEventListener("click",function(){
+    document.querySelector("#popup").style.display="flex"
+        })
+        
+ document.querySelector("#crossbtn").addEventListener("click",function(){
+ document.querySelector("#popup").style.display="none"
+ })       
