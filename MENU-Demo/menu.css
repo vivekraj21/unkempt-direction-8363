@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+#navbar{
+    display: flex;
+    margin: 30px;
+    height: 50px;
+    background-color: burlywood;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #1b1b1b;
+}
+#navbar label{
+    color: white;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+}
+.button span{
+    float: right;
+    line-height: 35px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#navbar ul{
+    position: absolute;
+    background: #1b1b1b;
+    top: 70px;
+    left: 0;
+    display: block;
+}
+#navbar ul li{
+    line-height: 40px;
+    padding: 8px;
+
+    cursor: pointer;
+
+}
+#navbar ul li label{
+
+}
+#navbar ul ul{
+    position: static;
+}
