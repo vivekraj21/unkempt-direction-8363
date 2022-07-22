@@ -1,0 +1,406 @@
+#navbar{
+
+    /* border:1px solid navy blue; */
+    width:99%;
+    height:35px;
+    background-color: aqua;
+    margin-bottom:10px;
+}
+#slideer{
+    /* border :1px solid red; */
+    width:99%;
+    height:500px;
+    background-color: aqua;
+    margin-bottom:10px;
+}
+
+
+
+#middiv{
+    border:2px solid #0f0617;
+    width:99.75%;
+    height:auto;
+    background-color: #0f0617;
+    margin-top:-89px;
+}
+/* //................................................................................................... */
+.row{
+    /* border:2px solid rgb(224, 56, 56); */
+    width:96%;
+    height:auto;
+    margin:auto;
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: space-between;
+    gap: 5px;
+
+
+
+
+}
+.row>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    width:230px;
+    height:325px;
+    margin:auto;
+    margin-top:5px;
+    cursor: pointer;
+      border:2px solid #0f0617;
+
+
+      position: relative;
+      text-align: center;
+      color: white;
+    
+   
+
+}
+
+/* .................................................... */
+.row>div {
+    transition: 1s ease;
+    }
+    
+    .row>div img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+    transition: 1s ease;
+    }
+/* .................................................................. */
+
+
+
+
+.posteR{
+    height:320px;
+    margin: auto;
+    border-radius: 10px;
+
+        transition: 1s ease;
+      
+        
+     
+
+
+}
+
+.anchor{
+    margin-left:20px;
+    margin-bottom:-9px;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color:white; */
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+/* .......................................................................................................... */
+.posteR2{
+    height:240px;
+    width:320px;
+    margin: auto;
+    border-radius: 10px;;
+}
+
+.row2{
+    /* border:2px solid rgb(224, 56, 56); */
+    width:96%;
+    height:auto;
+    margin:auto;
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.row2>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    width:325px;
+    height:auto;
+    margin:auto;
+    margin-top:5px;
+    cursor: pointer;
+   
+
+}
+
+.anchor>a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.row2 {
+    transition: 1s ease;
+    }
+    
+    .row2 img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+
+
+
+/* ........................................................................................................ */
+.row3{
+    /* border:2px solid rgb(224, 56, 56); */
+    width:96%;
+    height:auto;
+    margin:auto;
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    gap: 5px;
+ 
+
+}
+
+.posteR3{
+    height:auto;
+    width:700px;
+    margin: auto;
+    border-radius: 10px;
+    border-radius: 10px;
+  
+}
+
+.row3>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    width:auto;
+    height:auto;
+    margin:auto;
+    margin-top:5px;
+    cursor: pointer;
+
+   
+   
+
+}
+
+.row3 {
+    transition: 1s ease;
+    }
+    
+    .row3 img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+
+
+
+
+
+/* ...................................................................................................... */
+.posteR4{
+    height:240px;
+    width:320px;
+    margin: auto;
+    border-radius: 10px;
+  
+
+}
+
+.row4{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:96%;
+    height:auto;
+    margin:auto;
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 5px;
+  
+ 
+}
+.row4>div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:300px;
+    height:auto;
+    margin:auto;
+    margin-top:5px;
+    cursor: pointer;
+   background-color: rgb(75, 71, 66);
+ 
+}
+.row4 {
+    transition: 1s ease;
+    }
+    
+    .row4 img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+
+  
+/* ......................................................................................5th row............................................................................ */
+.row5{
+    /* border:2px solid rgb(224, 56, 56); */
+    width:96%;
+    height:220px;
+    margin:auto;
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content:space-between;
+    /* gap: 5px; */
+
+}
+.row5>div{
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+    width:150px;
+    height:220x;
+    margin:auto;
+    margin-top:5px;
+    cursor: pointer;
+    height:120px;
+
+}
+
+/* .................................................... */
+.row5 {
+    transition: 1s ease;
+
+    }
+    
+    .row5 img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+/* .................................................................. */
+
+
+
+
+.posteR5{
+    height:120px;
+    margin: auto;
+    border-radius: 50%;
+
+    
+        transition: 1s ease;
+      
+        
+}
+
+
+
+
+.row5 p{
+
+    color:white;
+}
+
+.anchor>a{
+    color:white;
+    margin-left:20px;
+    font-size:21px;
+}
+
+.row2 >div>p{
+ color:white
+}
+
+.row2 >div>p+p{
+    color:rgb(170, 166, 166)
+}
+
+
+
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  .hide {
+    margin-top:5px;
+    display: none;
+    color:rgb(18, 10, 10);
+    background-color:white;
+    border-radius: 10px;
+    
+width:180px;
+height:70px;
+/* border:1px solid green; */
+padding:10px;
+
+
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  }
+      
+.posteR:hover + .hide {
+
+    display: block;
+    color: rgb(22, 4, 4);
+   text-align: center;
+   background-color:white;
+   
+   transition: 60s ease;
+
+  } 
+
+
+
+.hide>p{
+    font-size: 14px;
+    text-align: left;
+   
+}
+.hide>p+button{
+    margin-right:140px;
+    display:inline;
+    padding:3px;
+    cursor: pointer;
+}
+.hide>button+p{
+    text-align: center;
+    margin-top:-20px;
+    font-size:17px;
+    color:rgb(171, 163, 163);
+    cursor: pointer;
+}
+.hide>button:hover{
+
+    background-color: rgb(240, 46, 85);
+    color:white;
+    border: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .............................footer */
+
+#foo{
+    border:1px solid rebeccapurple;
+    width: 98%;
+    height: 400px;
+    margin-top:20px;
+}
+
+
