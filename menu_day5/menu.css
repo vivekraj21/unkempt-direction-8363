@@ -1,0 +1,105 @@
+
+*{
+    font-family: NotoSansBold,sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+/* nav{
+    display: flex;
+    height: 50px;
+    background-color: burlywood;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    
+} */
+
+#menubtn{
+    margin-left: 95%;
+}
+#menubtn:target+#container{
+    background-color: gray;
+    border-radius: 50px;
+    
+}
+#container{
+    width: 300px;
+    height: auto;
+    
+    background: #0f0617;
+    margin-left: 78%;
+ 
+    
+    color: white;
+    
+   
+}
+/* #menubtn:hover+#container{
+    display: block;
+    position: absolute;
+} */
+.box{
+    border-top: 2px solid white;
+    border-bottom: solid white;
+    text-align:center;
+}
+.item{
+    
+    text-align:center;
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#explore:hover>.item{
+    display: block;
+}
+#explore:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.plans{
+    display: none;
+    cursor: pointer;
+}
+#plans:hover>.plans{
+    display: block;
+}
+#plans:hover{
+    color: gray;
+}
+
+#setting:hover{
+    color: gray;
+    cursor: pointer;
+}
+.setting{
+    display: none;
+}
+#setting:hover>.setting{
+    display: block;
+}
+
+#info:hover{
+    color: gray;
+    cursor: pointer;
+}
+.info{
+    display: none;
+}
+#info:hover>.info{
+    display: block;
+    border-radius: 10px;
+    
+}
+#ver{
+    color: gray;
+}
+#drop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
