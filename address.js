@@ -9,10 +9,7 @@ function collectdata(){
 
     alert("Plan Successfully Active")
     window.location.href="navbar.html"
-    // let payment = document.getElementById("main2");
-    //      payment.classList.toggle('active')
-    // let otpPage = document.getElementById("main3");
-    //      otpPage.classList.toggle('active')
+    
    }else{
         alert("credential does not match")
    }
