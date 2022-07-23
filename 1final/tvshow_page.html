@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="tvshow.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        #box img {
+            height: 520px;
+            width: 1550px;
+            padding-bottom: 0px;
+          
+
+        }
+        #box{
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .slider .slick-next {
+            position: absolute;
+            bottom: 380px;
+            right: 0%;
+            color: white;
+            width: 50px;
+            height: 50px;
+            background: none;
+            border-color: transparent;
+            border-radius: 50%;
+            text-align: centre;
+            line-height: 50px;
+            display: inline-block;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .slider .slick-prev {
+            position: absolute;
+            bottom: 380px;
+            right: 95%;
+            color: white;
+            width: 70px;
+            height: 50px;
+            background: none;
+            border-color: transparent;
+            border-radius: 50%;
+            text-align: centre;
+            line-height: 50px;
+            display: inline-block;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .slider {
+            background: transparent;
+        }
+
+        #gadha {
+            position: absolute;
+            bottom: 160px;
+            margin-left: 50px;
+            color: white;
+            font-size: 40px;
+            z-index: 2;
+        }
+
+        #ghoda {
+            position: absolute;
+            bottom: 100px;
+            margin-left: 50px;
+            z-index: 2;
+        }
+
+        #ghoda button {
+            padding: 10px 10px 10px 10px;
+            background-color: transparent;
+            border-color: white;
+            border-radius: 5px;
+        }
+
+        #ghoda button:nth-child(2) {
+            padding: 10px 10px 10px 10px;
+            background-color: rgb(130, 48, 198);
+            border-color: rgb(130, 48, 198);
+            border-radius: 5px;
+        }
+
+        #ghoda button {
+            color: white;
+            font-size: larger;
+            text-decoration: none;
+        }
+
+        #ghoda button a {
+            color: white;
+            font-size: larger;
+            text-decoration: none;
+        }
+
+      
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <section class="slider" id="box">
+        <div>
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-3392/cover/1920x77050480c91c7534e2f846717dc69b6e82c.jpg"
+                alt="">
+            <h1 id="gadha">Bhagya Lakshmi</h1>
+            <div id="ghoda">
+                <button onclick="mouse12()" value="bhagya lakshmi zee5 trailer" id="ghodavalue12">WATCH</button>
+                <button><a href="">BUY PLAN</a></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-127/cover/1920x770874538dbe025467d8ed1e3b20b2a1fb7.jpg"
+                alt="">
+            <h1 id="gadha">Kumkum Bhgaya</h1>
+            <div id="ghoda">
+                <button onclick="mouse11()" value="kumkum bhagya zee5 Trailer" id="ghodavalue11">WATCH</button>
+                <button><a href="">BUY PLAN</a></button>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-3121/cover/1920x7707a15dec18deb45eaa0e8f0d5d9076a71.jpg"
+                alt="">
+            <h1 id="gadha">Mithai</h1>
+            <div id="ghoda">
+                <button onclick="mouse13()" value="Mithai serial zee5 Trailer" id="ghodavalue13">WATCH</button>
+                <button><a href="">BUY PLAN</a></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-4z541514/cover/1920x770fe1eb41e0f094042a8801ef1f8948501.jpg"
+                alt="">
+            <h1 id="gadha">Pilu</h1>
+            <div id="ghoda">
+                <button onclick="mouse14()" value="Pilu zee5 Trailer" id="ghodavalue14">WATCH</button>
+                <button><a href="">BUY PLAN</a></button>
+            </div>
+
+    </section>
+
+    <div id="middiv">
+    
+        <h4  class="anchor"> <a href="">Top 10 in India</a></h4>
+          
+            <div class="row" class="mySlides">
+         
+                <div ><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_224,h_336,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770cd788cc8f66e4f27accee7da64d1e9cd.jpg" alt="">
+                    <div class="hide">
+                        <p>Jainhit Main Jari</p>
+                        <button onclick="mouse21()" value="janhit me jaari Trailer" id="ghodavalue21">Watch</button>
+                        <p>Share</p>
+                    </div>
+                    
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77007054b7e4c68467d92059e604b937ce4.jpg" alt="">
+                <div class="hide">
+                    <p>Maa Neella Tank</p>
+                    <button onclick="mouse22()" value="maa neella tank Trailer" id="ghodavalue22">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="">
+                <div class="hide">
+                    <p>Weetla Vishesham</p>
+                    <button onclick="mouse23()" value="weetla Vishesham Trailer" id="ghodavalue23">Watch</button>
+                    <p>Share</p>
+                </div>
+
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="">
+                <div class="hide">
+                    <p>Forensic</p>
+                    <button onclick="mouse24()" value="forensic Trailer" id="ghodavalue24">Watch</button>
+                    <p>Share</p>
+                </div>
+
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-101-10z5145273/portrait/1920x770681eb40058c046b7927bea554484d07f.jpg" alt="">
+                <div class="hide">
+                    <p>RRR</p>
+                    <button onclick="mouse25()" value="RRR Trailer" id="ghodavalue25">Watch</button>
+                    <p>Share</p>
+                </div>
+
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133458/portrait/1920x77060dd64aa6ef748f48bbdf4951a1f6af7b51352ca11794ad79904fded999459e7.jpg" alt="">
+                <div class="hide">
+                    <p>The Kashmir Files</p>
+                    <button onclick="mouse26()" value="the kashmir files Trailer" id="ghodavalue26">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+           
+    
+        </div>
+
+        
+        <h4  class="anchor"> <a href="">Latest Movies on ZEE5</a></h4>
+
+        <div class="row">
+
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="">
+                <div class="hide">
+                    <p>Forensic</p>
+                    <button onclick="mouse24()" value="forensic Trailer" id="ghodavalue24">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5161064/portrait/1920x770141bcd9ccf9945d490a7935a3cc311069180d7d5e4c248279410203ac82bc67d.jpg" alt="">
+                <div class="hide">
+                    <p>Dharm Veer</p>
+                    <button onclick="mouse32()" value="dharm veer zee5 Trailer" id="ghodavalue32">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_224,h_336,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="">
+                <div class="hide">
+                    <p>Weetla Vishesham</p>
+                    <button onclick="mouse23()" value="weetla Vishesham Trailer" id="ghodavalue23">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_224,h_336,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="">
+                <div class="hide">
+                    <p>Saas Bahu Achaar Pvt. Ltd.</p>
+                    <button onclick="mouse13()" value="Saas bahu achaar pvt. ltd. Trailer" id="ghodavalue13">WATCH</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-101-10z5145273/portrait/1920x770681eb40058c046b7927bea554484d07f.jpg" alt="">
+                <div class="hide">
+                    <p>RRR</p>
+                    <button onclick="mouse25()" value="RRR Trailer" id="ghodavalue25">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_224,h_336,c_scale,f_webp,q_auto:eco/resources/0-6-4z5145215/portrait/1920x770abf42130d9cf41dab2bf9e648cf3193b0b8736722f40431bb31a5214ab98851c.jpg" alt="">
+                <div class="hide">
+                    <p>Broken News</p>
+                    <button onclick="mouse23()" value="weetla Vishesham Trailer" id="ghodavalue23">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h4  class="anchor"> <a href="">Top Bangla Shows</a></h4>
+        
+
+        <div class="row">
+
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-3121/portrait/1920x7707a15dec18deb45eaa0e8f0d5d9076a71.jpg" alt="">
+                <div class="hide">
+                    <p> Mithai</p>
+                    <button onclick="mouse41()" value="Mithai Trailer" id="ghodavalue41">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5133456/portrait/1920x770b5e0ca844a634c3eae2da9e96f6b09c4.jpg" alt="">
+                <div class="hide">
+                    <p>Laalkuthi</p>
+                    <button onclick="mouse23()" value="weetla Vishesham Trailer" id="ghodavalue23">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z587354/portrait/1920x7704811ec99b4984dc7a7c3eb3fde60bb8f.jpg" alt="">
+                <div class="hide">
+                    <p>Lokkhi Kakima Superstar</p>
+                    <button onclick="mouse23()" value="weetla Vishesham Trailer" id="ghodavalue23">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5109525/portrait/1920x770caaddd1d0eba41298267425075ceaf76.jpg" alt="">
+                <div class="hide">
+                    <p>Uron Tubri</p>
+                    <button onclick="mouse42()" value="Uron Tubri Trailer" id="ghodavalue42">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5141389/portrait/1920x7708681d32884ca4bcea5a955cdecce92a2.jpg" alt="">
+                <div class="hide">
+                    <p>Khelna Bari</p>
+                    <button onclick="mouse41()" value="Mithai Trailer" id="ghodavalue41">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            <div><img class="posteR" src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5159940/portrait/1920x7704b856d1707af41b79e72aafa78a6833a.jpg" alt="">
+                <div class="hide">
+                    <p>Boddhisatwer Bodhbuddhi</p>
+                    <button onclick="mouse42()" value="Uron Tubri Trailer" id="ghodavalue42">Watch</button>
+                    <p>Share</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+  <h4  class="anchor"> <a href="">Featured Celebs</a></h4>
+
+  <div class="row5">
+
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-6488/square/salmankhanfeaturedcelebsimagery1170x65809062022625a938fb39847fcad83c27afbcf457c.jpg" alt="">
+      <p>Salman Khan</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-3465/square/kanganaranaut_11_740919463.jpg" alt="">
+      <p>Kangana Ranaut</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-8267/square/vikrantmasseyplatformcreta.jpg" alt="">
+      <p>Vikrant Massey</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-3z5160114/square/radhikaaptefeaturedcelebsimagery1170x65809062022c01252ab71ec4402a40abad627a93100.jpg" alt="">
+      <p>Radhika Apte</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-2726/square/amitabhbacchan1943871325943d09c20f4de05425fad88119ceae03f2a.jpg" alt="">
+      <p>Amitabh Bachchan</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-3z5160115/square/jaideepahlawatthumbnailpin1170x658featuredcelebsimagery130620225342e77a77284df7857847f2462eb47b.jpg" alt="">
+    <p>  Jaideep Ahlawat</p>
+      </div>
+
+
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-7543/square/platformcretaiv19394642241939039a6f594cc14281be4890c46be5cc50.jpg" alt="">
+    <p> Manoj Bajpayee</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-6489/square/akshaykumar117054854610454834be00582707448e8b5b9f987afffaaf.jpg" alt="">
+      <p>Akshay Kumar</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-8678/square/platformcretaive901722262901bf7ce071fc824c03b3d974ce5d2caa79.jpg" alt="">
+      <p>Shah Rukh Khan</p>
+      </div>
+      <div><img class="posteR5" src="https://akamaividz2.zee5.com/image/upload/w_125,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-7217/square/pankajtripathi.jpg" alt="">
+      <p>Pankaj Tripathi</p>
+      </div>
+      
+  </div>
+
+
+  <h4  class="anchor"> <a href="">Latest Hindi Episodes free</a></h4>
+        
+
+    <div class="row2">
+
+        <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_350,h_197,c_scale,f_webp,q_auto:eco/resources/0-1-6z5183428/list/0000009387ccff61c3834d5783bd53183576948b.jpg" alt="">
+        <p>Kumkum Bhagya</p>
+        <p>E2177 . 20jul</p>
+
+        </div>
+        <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-1-6z5183325/list/000001734c6391bc8299497d9b44a72042161a14.jpg" alt="">
+         <p>Kumkum Bhagya</p>
+        <p>E2177 . 20jul</p>
+
+        </div>
+        <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-1-6z5183433/list/00000237f70cc91ad4a64fffaca292c6f389e35a.jpg" alt="">
+            <p>Kumkum Bhagya</p>
+            <p>E2177 . 20jul</p>
+        </div>
+        <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-1-6z5183339/list/00000195b9fa7ed81e69422da2f939cefeb36f5b.jpg" alt="">
+         <p>Kumkum Bhagya</p>
+        <p>E2177 . 20jul</p>
+
+        </div>
+    </div>
+    <h4  class="anchor"> <a href="">Learn with Eduauraa</a></h4>
+    <div class="row2">
+ 
+     <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-8-8548/list/1170x6583248420913248420912a5ee8a5bc7544c2b26f9020cef371ab.jpg" alt="">
+     <p>Kumkum Bhagya</p>
+     <p>E2177 . 20jul</p>
+ 
+     </div>
+     <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-8-8582/list/1170x65830152025630152025618382d6419e84a5fbcc22267dc983c46.jpg" alt="">
+      <p>Bhagya Lakshmi </p>
+     <p>E291 . 20jul</p>
+ 
+     </div>
+     <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-8-8583/list/1170x65897513700697513700637a8b1550c2448ad9edc8fc9456883fc.jpg" alt="">
+         <p>Kundali Bhagya</p>
+         <p>E288 . 20jul</p>
+     </div>
+     <div><img class="posteR2" src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-8-8584/list/1170x65818705127701870512770045e11e19c4f4e3191082b0fbf4b994c.jpg" alt="">
+      <p>Meet</p>
+     <p>E304 . 20jul</p>
+ 
+     </div>
+ 
+ </div> 
+
+ <h4  class="anchor"> <a href="">Explore By Channels</a></h4> 
+        
+
+ <div class="row4">
+
+    <div><img class="posteR4" src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-6813/list/zeetv1170x6581852524910.jpg" alt="">
+   
+
+    </div>
+    <div><img class="posteR4" src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-6817/list/zeetelugu1170x6581992154.jpg" alt="">
+  
+    </div>
+    <div><img class="posteR4" src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-manualcol_1565404213/list/zeebangla1170x65833132580.jpg" alt="">
+      
+    </div>
+    <div><img class="posteR4" src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-8-6814/list/tv1170x658467137984.jpg" alt="">
+ 
+    </div>
+
+
+
+
+</div>  
+
+
+</div> 
+
+<footer id="footer">
+    <div class="container">
+
+
+
+        <hr style="height:0.5px;border-width:0;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;">
+
+        <br>
+        <div class="logDiv">
+
+            <div class="logo">
+
+                <h4>Download Apps</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img
+                        src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
+                <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img
+                        src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
+            </div>
+            <div class="leftlogo">
+                <h4>Connect with us</h4>
+
+                <a href="https://www.facebook.com/ZEE5/" class="fb"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/zee5/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/zee5india" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><i
+                        class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <!-- about -->
+            <p><a href="">About Us</a></p>
+
+            <p>|</p>
+            <!-- help center -->
+            <p><a href="">Help Center</a></p>
+
+            <p>|</p>
+            <!-- Privacy policy -->
+            <p><a href="">Buy Plan</a></p>
+
+
+
+
+        </div>
+        <div class="row">
+            <div class="footer-col">
+                <h3>Popular TV Shows</h3>
+
+
+                <div><a href="https://www.zee5.com/movies/details/kya-meri-sonam-gupta-bewafa-hai/0-0-1z51625">Kumkum
+                        Bhagya</a></div>
+                <div><a href="tvshow_page.html">Kundali Bhagya</a></div>
+                <div><a href="tvshow_page.html">Bhagya Lakshmi</a></div>
+                <div><a href="tvshow_page.html">Tujhse Hai Raabta</a></div>
+                <div><a href="tvshow_page.html">Kyun Rishton Mein Katti Batti</a></div>
+
+
+
+            </div>
+            <div class="footer-col">
+                <h3>Premium Movies</h3>
+
+                <div><a href="navbar.html">Kya Meri Sonam Gupta Bewafa</a></div>
+                <div><a href="navbar.html">Helmet</a></div>
+                <div><a href="navbar.html">200 Halla Ho</a></div>
+                <div><a href="navbar.html">14 Phere</a></div>
+                <div><a href="navbar.html">Dial 100</a></div>
+
+            </div>
+
+            <div class="footer-col">
+                <h3>Popular LIVE TV Channels</h3>
+
+                <div><a href="news.html">Aaj Tak</a></div>
+                <div><a href="news.html">Zee News</a></div>
+                <div><a href="news.html">Zee Tv HD</a></div>
+                <div><a href="news.html">&TV HD</a></div>
+                <div><a href="news.html">Zee Marathi HD</a></div>
+
+            </div>
+            <div class="footer-col">
+                <h3>Popular Web Series</h3>
+
+                <div><a href="navbar.html">Sunflower</a></div>
+                <div><a href="navbar.html">Jeet Ki Zid</a></div>
+                <div><a href="navbar.html">Biccho Ka Khel</a></div>
+                <div><a href="navbar.html">State of Seige:26/11</a></div>
+                <div><a href="navbar.html">Naxalbari</a></div>
+
+            </div>
+            <div class="footer-col">
+                <h3>Bollywood Top Celebrities</h3>
+
+                <div><a href="">Sunny Leone</a></div>
+                <div><a href="">Disha Patani</a></div>
+                <div><a href="">Deepika Padukone</a></div>
+                <div><a href="">Salman Khan</a></div>
+                <div><a href="">Nora Fatehi</a></div>
+
+            </div>
+        </div>
+        <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+            Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
+    </div>
+</footer>
+ 
+       
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+            arrows: true,
+            infinite: true,
+        });
+    </script>
+</body>
+
+</html>
+
+<script>
+    function mouse11() {
+        value = document.querySelector("#ghodavalue11").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse12() {
+        value = document.querySelector("#ghodavalue12").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse13() {
+        value = document.querySelector("#ghodavalue13").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse14() {
+        value = document.querySelector("#ghodavalue14").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse21() {
+        value = document.querySelector("#ghodavalue21").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse22() {
+        value = document.querySelector("#ghodavalue22").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse23() {
+        value = document.querySelector("#ghodavalue23").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse24() {
+        value = document.querySelector("#ghodavalue24").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse25() {
+        value = document.querySelector("#ghodavalue25").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse26() {
+        value = document.querySelector("#ghodavalue26").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse32() {
+        value = document.querySelector("#ghodavalue32").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse41() {
+        value = document.querySelector("#ghodavalue41").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+    function mouse42() {
+        value = document.querySelector("#ghodavalue42").value
+        console.log(value);
+        localStorage.setItem("movie_name", JSON.stringify(value));
+        window.location.href = "tvshow_video.html"
+    }
+</script>
+
+<script src="./navbarimport.js" type="module"> </script>

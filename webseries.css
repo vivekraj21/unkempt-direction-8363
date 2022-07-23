@@ -1,19 +1,31 @@
+#navbar{
 
-
-body{
-    background-color: black;
+    /* border:1px solid navy blue; */
+    width:99%;
+    height:35px;
+    background-color: aqua;
+    margin-bottom:10px;
+}
+#slideer{
+    /* border :1px solid red; */
+    width:99%;
+    height:500px;
+    background-color: aqua;
+    margin-bottom:10px;
 }
 
+
+
 #middiv{
-    /* border:5px solid rgb(135, 157, 12); */
-    width:99%;
+    border:2px solid #0f0617;
+    width:99.75%;
     height:auto;
-background-color: rgb(3, 3, 3);
-    margin-top:50px;
+    background-color: #0f0617;
+    margin-top:-89px;
 }
 /* //................................................................................................... */
 .row{
-    /* border:2px solid rgb(56, 129, 224); */
+    /* border:2px solid rgb(224, 56, 56); */
     width:96%;
     height:auto;
     margin:auto;
@@ -26,9 +38,6 @@ background-color: rgb(3, 3, 3);
 
 
 
- 
-
-
 }
 .row>div{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -37,7 +46,7 @@ background-color: rgb(3, 3, 3);
     margin:auto;
     margin-top:5px;
     cursor: pointer;
-      /* border:2px solid rgb(224, 56, 56); */
+      border:2px solid #0f0617;
 
 
       position: relative;
@@ -46,7 +55,6 @@ background-color: rgb(3, 3, 3);
     
    
 
-    
 }
 
 /* .................................................... */
@@ -59,11 +67,6 @@ background-color: rgb(3, 3, 3);
     -ms-transform: scale(1.2);
     transform: scale(1.1);
     transition: 1s ease;
-
-
-
-
-
     }
 /* .................................................................. */
 
@@ -89,7 +92,8 @@ background-color: rgb(3, 3, 3);
     font-size: 21px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* color:white; */
-    
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 /* .......................................................................................................... */
 .posteR2{
@@ -320,14 +324,14 @@ background-color: rgb(3, 3, 3);
     opacity: 1;
   }
 
-/* ................................yh */
+
   .hide {
     margin-top:5px;
-    display:none;
+    display: none;
     color:rgb(18, 10, 10);
     background-color:white;
     border-radius: 10px;
-  
+    
 width:180px;
 height:70px;
 /* border:1px solid green; */
@@ -341,12 +345,11 @@ padding:10px;
       
 .posteR:hover + .hide {
 
-    display:block;
-
+    display: block;
     color: rgb(22, 4, 4);
    text-align: center;
    background-color:white;
-  
+   
    transition: 60s ease;
 
   } 
@@ -356,7 +359,6 @@ padding:10px;
 .hide>p{
     font-size: 14px;
     text-align: left;
-    display:block;
    
 }
 .hide>p+button{
@@ -364,28 +366,24 @@ padding:10px;
     display:inline;
     padding:3px;
     cursor: pointer;
-    display:block;
 }
 .hide>button+p{
     text-align: center;
     margin-top:-20px;
     font-size:17px;
-    color:rgb(97, 95, 95);
+    color:rgb(171, 163, 163);
     cursor: pointer;
-    display:block;
-    column-rule-color: brown;
 }
 .hide>button:hover{
 
     background-color: rgb(240, 46, 85);
     color:white;
     border: white;
-    display:block;
-    column-rule-color: brown;
 }
 
 
-/* ................................... */
+
+
 
 
 
@@ -398,33 +396,6 @@ padding:10px;
 
 /* .............................footer */
 
-#foo{
-    border:1px solid rebeccapurple;
-    width: 98%;
-    height: 400px;
-    margin-top:20px;
-}
 
 
 
-
-.hide>p>img{
-    width:15px;
-    margin-right:5px;
-}
-
-
-#newsdiv{
-    display :grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:25px;
-    background-color: black;
-
-}
-.titlebar{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(253, 243, 243);
-    font-size:15px;
-    font-style: oblique;
-    
-}

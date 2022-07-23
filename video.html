@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #frame{
-            margin-left: 50px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./navbar.css">
+  <style>
+    #frame {
+      margin-left: 50px;
+    }
+  </style>
 </head>
+
 <body>
-   <h2> ADD NAVBAR HERE </h2>
-   <iframe id="frame" width="880" height="550"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <div>
-    
-   </div>
+
+  <div id="navbar">
+   
+ 
+  </div>
+ 
+
+
+ 
+  <iframe id="frame" width="880" height="550" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <div>
+
+  </div>
 </body>
+
 </html>
 
 <script>
- 
+  
 
-  const api_key="AIzaSyAWSWiHnyamyt1kT1KJ68mld0mEfmdHnL0"
+  const api_key = "AIzaSyAWSWiHnyamyt1kT1KJ68mld0mEfmdHnL0"
 
   let getdata = async () => {
     let q = localStorage.getItem("movie_name")
@@ -34,7 +48,7 @@
     console.log(res);
     let data = await res.json();
     console.log(data);
-   
+
     let main_video = data.items[0];
     console.log(main_video);
     let id = main_video.id.videoId;
@@ -42,4 +56,10 @@
     screen.src = `https://www.youtube.com/embed/${id}`
   }
   getdata();
+
+  
+
+
 </script>
+
+<script src="./navbarimport.js" type="module"> </script>
