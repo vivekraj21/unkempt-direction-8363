@@ -15,10 +15,12 @@
     margin-bottom:10px;
 }  */
 
-
+body{
+    background-color: black;
+}
 
 #middiv{
-    border:5px solid rgb(135, 157, 12);
+    /* border:5px solid rgb(135, 157, 12); */
     width:99%;
     height:auto;
 background-color: rgb(3, 3, 3);
@@ -26,7 +28,7 @@ background-color: rgb(3, 3, 3);
 }
 /* //................................................................................................... */
 .row{
-    border:2px solid rgb(56, 129, 224);
+    /* border:2px solid rgb(56, 129, 224); */
     width:96%;
     height:auto;
     margin:auto;
@@ -50,7 +52,7 @@ background-color: rgb(3, 3, 3);
     margin:auto;
     margin-top:5px;
     cursor: pointer;
-      border:2px solid rgb(224, 56, 56);
+      /* border:2px solid rgb(224, 56, 56); */
 
 
       position: relative;
