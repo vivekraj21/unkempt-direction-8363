@@ -136,7 +136,7 @@ right: 270px;
     height: 100%;
     position: absolute;
     top:0;
-    display: none;
+    display: flex;
     justify-content: center;
     /* text-align: center; */
 }
@@ -261,16 +261,23 @@ right: 270px;
     text-align: center;
     
 }
+#have{
+    padding: 10px;
+    margin-top: -20px;
+}
 #continuewithplan{
-    width: 90%;
-    margin-left: 30px;
-    margin-top: 10px;
+    width: 300px;
+    
+    text-decoration:none ;
+    margin-left: 50px;
+    margin-top: 20px;
     height: 38px;
     font-weight: bold;
     background-color: blueviolet;
     color: white;
     border: 0px;
     border-radius: 5px;
+    padding: 10px 50px  10px 50px;
 }
 #crossbtn{
     /* margin-left: 102%;

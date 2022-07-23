@@ -5,6 +5,7 @@ document.getElementById("navbar").innerHTML=navbar();
 
 let plan=document.getElementById("plan");
 plan.addEventListener("click",function(){
+
     window.location.href="./plan.html"
     
 })
@@ -16,8 +17,10 @@ plan.addEventListener("click",function(){
 //  document.querySelector("#crossbtn").addEventListener("click",function(){
 //  document.querySelector("#popup").style.display="none"
 //  })       
+ 
+})
 
- let pay=document.getElementById("continuewithplan").addEventListener("click",function(){
+document.getElementById("continuewithplan").addEventListener("click",function(){
   window.location.href="address.html"
 
  })
