@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/462bdcea9e.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar{
+            display: flex;
+            margin: 30px;
+            height: 50px;
+            background-color: burlywood;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #navbar>div{
+            margin: 20px;
+            border-radius: 50%;
+        }
+        /* #m_list:hover{
+            background-color: gainsboro;
+            border-radius: 50%; */
+        /* } */
+        #m_list:target .list{
+           display: block; 
+            /* background-color: rebeccapurple; */
+            
+        }
+        .list{
+            margin-left: 70%;
+            gap: 30px;
+            width: auto;
+            border: 1px solid black;
+           
+        }
+        li{
+            list-style-type: none;
+            font-family: NotoSansBold,sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2857142857em;
+    font-weight: 700;
+    padding: 15.5px 16px;
+    margin: 0 16px;
+    cursor: pointer;
+        }
+    select{
+        font-family: NotoSansBold,sans-serif;
+    font-size: 1.4rem;
+    
+   
+    font-weight: 700;
+    
+   
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="m_list"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    
+        <ul class="list">
+            <li>Home</li>
+            <li><select name="Explore" id="">Explore
+                <option value="">TV Shows</option>
+                <option value="">Movies</option>
+                <option value="">Web Series</option>
+                <option value="">News</option>
+                <option value="">Eduauraa</option>
+                <option value="">Premium</option>
+                <option value="">Live TV</option>
+                <option value="">Music</option>
+                <option value="">ZEEPLEX</option>
+                <option value="">Play</option>
+            </select></li>
+            <li><select name="" id="">Planes
+                <option value="">Buy Plan</option>
+                <option value="">Have a prepaid code?</option>
+            </select></li>
+            <li><select name="" id="">Setting
+                <option value="">Reset Settings to default</option>
+            </select></li>
+            <li><select name="" id="">Info
+                <option value="">Abut Us</option>
+                <Option>Help Center</Option>
+                <option value="">Content Redressal Mechanism</option>
+                <option value="">Terms of Use</option>
+                <option value="">Privacy Police</option>
+                option
+            </select></li>
+            <li>Version 2.51.77</li>
+        </ul>
+    
+</body>
+</html>
+<script src="menu_bar.js"></script>
