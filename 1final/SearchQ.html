@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./SearchQ.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <link rel="stylesheet" href="footer.css" >
+</head>
+<body>
+
+    
+<div class="n">
+    <img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.52.17" alt="" srcset="">
+    <a  id="home" href="navbar.html">HOME</a>
+    <input type="text" placeholder="Search" id="query" > 
+</div>
+<div id="s"></div>
+
+<div id="filtr">
+
+ <select name="" id="">
+    <option value="">Language</option>
+    <option value="">All</option>
+    <option value="">Hindi</option>
+    <option value="">Kannada</option>
+    <option value="">Telugu</option>
+    <option value="">English</option>
+    <option value="">Bengali</option>
+    <option value="">Marathi</option>
+ </select>
+
+
+ <select name="" id="">
+    <option value="">Genres</option>
+    <option value="">All</option>
+    <option value="">News</option>
+    <option value="">Drama</option>
+    <option value="">Period</option>
+    <option value="">Entertainment</option>
+    <option value="">Event</option>
+ </select>
+
+
+ <select name="" id="">
+    <option value="">All</option>
+    <option value="">News</option>
+    <option value="">Movies</option>
+    <option value="">Show</option>
+   
+ </select>
+
+</div>
+
+
+
+<div id="Squery"></div>
+
+</body>
+</html>
+
+<script src="./SearchQ.js"></script>
+
+<script>
+
+
+
+
+let id;
+let Data;
+let data;
+let query=document.getElementById("query")
+query.addEventListener("input", function(){
+    debounce(main,1000)
+})
+
+   
+
+
+let key = `AIzaSyA0RZ429CLkK4e-UF7yyszV_2KlMioW5wk`
+//let url=` https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=thor&key=${key}`
+
+let q=""
+let search = async () => {
+
+
+    let query = document.getElementById("query").value
+    let data = await getData(query)
+    append(data)
+  
+    q=query
+}
+
+let mad= JSON.parse(localStorage.getItem("stor"))||[]
+
+
+
+console.log(mad,"mad")
+
+
+
+
+let getData = async (query) => {
+
+    let url = ` https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query} &key=AIzaSyAVPfcP0gaguOuUuB7iFFZ5cCRUhhF28xA`
+
+    let res = await fetch(url)
+    let data = await res.json()
+    console.log(data.items)
+   
+    return data.items
+}
+
+
+//done..................................................
+
+
+let append = (data) => {
+
+    mad.push(data)
+    localStorage.setItem("stor",JSON.stringify(mad))
+
+    let container = document.getElementById("Squery")
+    container.innerHTML = null;
+    data.forEach((el) => {
+
+
+        let img = document.createElement("img")
+        img.src = el.snippet.thumbnails.medium.url
+
+        let h3 = document.createElement("p")
+        h3.setAttribute("class", "yourColor")
+        h3.innerText = el.snippet.title
+
+
+
+
+        let div = document.createElement("div")
+        div.setAttribute("class", "video");
+        div.onclick =() =>{
+
+            saveVideo(el);
+        }
+
+        div.append(img, h3)
+        container.append(div)
+    })
+//................................................................
+
+};
+
+let saveVideo = (data => {
+
+    localStorage.setItem("video", JSON.stringify(data))
+     window.location.href="vd.html"
+})
+
+
+
+
+
+
+
+
+  function debounce(main,delay){
+
+if(id){
+    clearTimeout(id)
+        
+}
+
+id= setTimeout(function(){
+  
+    main()
+
+},delay)
+}
+
+
+
+  async function main(){
+
+    let query=document.getElementById("query").value;
+
+   let data= await getData (query)
+
+   append(data)
+}
+
+
+
+
+
+</script>
+<script src="./navbarimport.js" type="module"> </script>

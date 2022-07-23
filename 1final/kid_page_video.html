@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home_page.css">
-    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="kid_page.css">
+    <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
@@ -20,7 +20,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             background: #0f0617;
-            padding-top: 10px;
+            margin-top: -10px;
            
         }
 
@@ -43,11 +43,7 @@
 </head>
 
 <body>
-    <div id="navbar">
-   
- 
-    </div>
-    
+    <div id="navbar"></div>
     <div id="goat">
         <iframe id="frame" width="880" height="550" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -453,8 +449,6 @@
         localStorage.setItem("movie_name", JSON.stringify(value));
         window.location.href = "kid_page_video.html"
     }
-
-    
 </script>
 
-<script src="../navbarimport.js" type="module"> </script>
+<script src="./navbarimport.js" type="module"> </script>

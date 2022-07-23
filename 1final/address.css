@@ -1,0 +1,143 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+#main2{
+
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #ffff;
+    
+    /* position: fixed; */
+    /* transform: translate(-50%,-50%); */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* transition: 0.5s; */
+}
+#main1{
+
+    top: 40%;
+    left: 50%;
+    width: 200px;
+    height: 460px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(234, 232, 236);
+    /* display: grid; */
+
+    
+    
+    /* position: fixed; */
+    /* transform: translate(-50%,-50%); */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* transition: 0.5s; */
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
+/* #cv{
+    display: flex;
+    justify-content: space-between;
+} */
+#cv>input{
+    width: 140px;
+    height: 28px;
+    /* font-size: 18px;  */
+    border-radius: 0px;   
+}
+#main2 input{
+    border: none;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    padding: 0px 5px;
+    border-radius: 0px;  
+}
+#num>input,#name>input{
+    width: 100%;
+    height: 28px;
+    /* font-size: 18px; */
+    border-radius: 0px;
+    margin-top: 10px;  
+}
+#name>input{
+    margin: 20px 0px;
+    border-radius: 0px; 
+    margin-top: 10px; 
+}
+input:focus{
+    outline: none;
+}
+#main2 button{
+    text-align: center;
+    width: 70%;
+    height: 40px;
+    margin-top: 40px;
+    padding: 5px 30px;
+    background-color: rgb(193, 160, 224);
+    color: #ffff;
+    border: 1px solid rgb(171, 172, 171);
+    border-radius: 5px;
+}
+#main2 button:hover{
+
+    background-color: rgb(102, 42, 158);    
+}
+#credit{
+    color: blueviolet;
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    border: 1px dotted;
+
+}
+#mynum{
+    margin-top: 50px;
+}
+#savecard{
+    margin-top: 30px;
+}
+#cvv1{
+    margin-left: 130px;
+}
+#cvv{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.col{
+    color: rgb(70, 12, 124);
+}
+#premium{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid; */
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+#premium img{
+    margin-top: 20px;
+}
+#premium h5{
+    margin-top: -10px;
+    color: rgb(148, 151, 151);
+}
+#headpay p{
+    color: rgb(133, 139, 139);
+}
+#payprice{
+    position: absolute;
+    right: 420px;
+    top:140px;
+    
+}

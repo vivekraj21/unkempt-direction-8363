@@ -1,0 +1,53 @@
+#Squery{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+
+.yourColor{
+    color:white
+}
+option{
+
+    background-color: rgb(38, 2, 72);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+select{
+
+    background-color:#271F2E;
+    color: white;
+}
+#middiv >h2{
+    color:white;
+   
+}
+#query{
+    margin-left: 210px;
+    padding: 5px 300px 5px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    
+}
+
+.n{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+}
+#filtr{
+    margin-left: 1100px;
+    margin-top: 10px;
+}
+
+
+.n img{
+    width: 70px;
+}
+#home {
+    color: black;
+    padding-top: 30px;
+    
+}
