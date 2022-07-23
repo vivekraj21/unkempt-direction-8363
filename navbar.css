@@ -4,7 +4,7 @@
  }   
 #navbar_1st img{
 
-        width: 100px;
+        width: 70px;
     }
 #navbar_1st{
     display: flex;
@@ -17,6 +17,7 @@
     width: 100%;
     position: sticky;
     top:0px;
+    height: 70px;
 
 } 
 #navbar_2nd{
@@ -37,7 +38,7 @@
 #navbar_1st h3 a:hover{
      text-decoration: underline;
 }
-#plan i{
+#i3{
     position: absolute;
     right: 90px;
     top:13px;
@@ -48,7 +49,7 @@
 
 #plan{
 position: absolute;
-top:30px;
+top:17px;
 right:60px;
 width: 110px;
 height: 40px;
@@ -61,7 +62,7 @@ padding: 0px 0px 0px 10px;
 }
 #loginbtn{
 position: absolute;
-top: 30px;
+top: 17px;
 right: 190px;
 width: 70px;
 height: 40px;
@@ -73,7 +74,7 @@ border-radius: 10px;
 }
 #lang{
 position: absolute;
-top:35px;
+top:23px;
 right: 280px;
 color: white;
 
@@ -81,17 +82,17 @@ color: white;
 
 #navbar_2nd img{
 
-width: 20px;
+width: 19px;
 border-radius: 50%;
 position: absolute;
-top:29px;
+top:20px;
 right: 270px;
 
 }
 #search{
 
     position: absolute;
-    top:30px;
+    top:23px;
     left: 680px;
     width: 190px;
     height: 30px;
@@ -108,7 +109,7 @@ right: 270px;
 #i1{
     position: absolute;
     right:30px ;
-    top:40px;
+    top:30px;
     color: white;
    
 }
@@ -117,16 +118,217 @@ right: 270px;
   color: white; 
   position: absolute;
   left:684px ;
-  top:40px; 
+  top:32px; 
 }
 
 #i4{
     
-    position: relative;
+    /* position: absolute;
     left: 30px;
-    top:35px;
+    top:40px; */
     color: white;
+    margin-left: 30px;
+    margin-top: 32px;
+}
+#popup{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    /* text-align: center; */
+}
+#popup1{
+    height: 370px;
+    width: 330px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0px 8px 8px 0px;
+    /* position: relative; */
+    margin-top: 100px;
+    padding-top: 1px;
+    border: 2px dotted;
+
+}
+#popupcontainar{
+    height: 370px;
+    width: 330px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px 0px 0px 8px;
+    /* position: relative; */
+    margin-top: 100px;
+    padding-top: 1px;
+    background-color: rgb(226, 211, 216);
+    border: 2px dotted;
+    
+}
+#popupcontainar h2{
+     
+    margin-top: 20px;
+}
+#period1{
+    background-color: rgb(55, 55, 182);
+    width: 200px;
+    color: white;
+
+}
+#save{
+    padding: 1px;
+    width: 340px;
+    height: 130px;
+    background-color: rgb(236, 201, 207);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#save h4{
+    padding: 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#save p{
+    margin-left: 10px;
+}
+#save button{
+    position: absolute;
+    right:270px;
+    top:135px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 45, 91);
+    color:rgb(180, 28, 53);
+    font-weight: bold;
+    background-color: transparent;
+}
+#discount{
+    position: absolute;
+    right :280px;
+    top:180px;
+    text-decoration: line-through;
+
+}
+#current{
+    position: absolute;
+    right :260px;
+    top:200px;
+}
+#tv1{
+
+    position: absolute;
+    right :570px;
+    top:270px;
+
+}
+#tvscreen1{
+    position: absolute;
+    right :310px;
+    top:270px;
+}
+#save1{
+    padding: 1px;
+    width: 340px;
+    height: 50px;
+    border: 2px dotted rgb(107, 105, 105);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+#current1{
+    position: absolute;
+    right :265px;
+    top:305px;
+    
+}
+#plan499{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#tv2{
+
+    position: absolute;
+    right :570px;
+    top:370px;
+
+}
+#tvscreen2{
+    position: absolute;
+    right :310px;
+    top:370px;
+}
+#codecenter{
+   
+    text-align: center;
+    
+}
+#continuewithplan{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 38px;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+#crossbtn{
+    /* margin-left: 102%;
+    border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -60px; */
+    background-color: black;
+    color: white;
+    position: absolute;
+    right:247px;
+    top:90px;
+    border-radius: 50%;
+    padding: 4px;
+
+    
+}
+
+/* #right{ */
+    /* position: relative; */
+    /* display: inline-block; */
+/* } */
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color:rgb(53, 50, 50);
+    min-width: 50px;
+    z-index: 1;
+    left: 580px;
+    top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding: 20px; */
+    /* padding-left: 30px; */
+    border-radius: 10px;
+}
+#right:hover #dropdown{
+    display: block;
 }
 
 
-
+#dropdown>div{
+    /* margin-bottom: 15px; */
+    width: 230px;
+    padding: 10px;
+    height: 30px;
+}
+#dropdown>div:hover{
+    border-radius: 10px;
+    background-color: rgb(138, 128, 128);
+}
+#dropdown>div>a{
+    color: black;
+    text-decoration: none;
+    margin-top: 80px;
+    color: white;
+    font-weight: bold;
+}
+#i4{
+    position: absolute;
+    /* left: 1272px; */
+    /* top: -28px; */
+}

@@ -8,3 +8,20 @@ plan.addEventListener("click",function(){
 
     console.log("my");
 })
+
+document.querySelector("#plan").addEventListener("click",function(){
+    document.querySelector("#popup").style.display="flex"
+        })
+        
+ document.querySelector("#crossbtn").addEventListener("click",function(){
+ document.querySelector("#popup").style.display="none"
+ })       
+
+ let pay=document.getElementById("continuewithplan").addEventListener("click",function(){
+  window.location.href="address.html"
+
+ })
+
+
+
+ 

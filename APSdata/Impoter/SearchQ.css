@@ -1,0 +1,28 @@
+#Squery{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+body{
+    background-color: black;
+}
+
+.yourColor{
+    color:white
+}
+option{
+
+    background-color: rgb(38, 2, 72);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+select{
+
+    background-color:#271F2E;
+    color: white;
+}
+#middiv >h2{
+    color:white;
+   
+}

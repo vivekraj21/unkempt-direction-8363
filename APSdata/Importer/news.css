@@ -1,0 +1,90 @@
+
+#box{
+    background-color: black;
+}
+
+
+#box img{
+    height: auto;
+    width: 100%;
+   padding-bottom: 0px;
+   padding:4px;
+background-color: black;
+}
+.slider .slick-next{
+    position: absolute;
+    bottom: 380px;
+    right: 0%;
+    color:white;
+    width: 50px;
+    height: 50px;
+    background:none;
+    border-color:transparent;
+    border-radius: 50%;
+    text-align: centre;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 2;
+}
+.slider .slick-prev{
+    position:absolute;
+    bottom: 380px;
+    right: 95%;
+    color:white;
+    width: 70px;
+    height: 50px;
+    background:none;
+    border-color:transparent;
+    border-radius: 50%;
+    text-align: centre;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 2;
+}
+#gadha{
+    position: absolute;
+    bottom: 160px;
+    margin-left: 50px;
+    color: white;
+    font-size:40px;
+    z-index: 2;
+}
+#ghoda{
+    position: absolute;
+    bottom: 130px;
+    margin-left: 50px;
+    z-index: 2;
+}
+#ghoda button{
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+}
+#ghoda button:nth-child(2){
+    padding: 10px 10px 10px 10px;
+    background-color:rgb(130,48,198);
+    border-color: rgb(130,48,198);
+    border-radius: 5px;
+}
+
+#ghoda button a{
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+#bigContainerss{
+
+    background-color: black;
+}
+
+#slideerAre +h2{
+    color:white
+}
+
+.row4+h2{
+    color:white;
+}
