@@ -7,7 +7,7 @@ body{
     top: 40%;
     left: 50%;
     width: 400px;
-    height: 640px;
+    height: 500px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 0px 5px 5px 0px;
@@ -25,7 +25,7 @@ body{
     top: 40%;
     left: 50%;
     width: 200px;
-    height: 600px;
+    height: 460px;
     padding: 40px;
     border: 1px solid black;
     border-radius: 5px 0px 0px 5px;
@@ -87,6 +87,10 @@ input:focus{
     color: #ffff;
     border: 1px solid rgb(171, 172, 171);
     border-radius: 5px;
+}
+#main2 button:hover{
+
+    background-color: rgb(102, 42, 158);    
 }
 #credit{
     color: blueviolet;
