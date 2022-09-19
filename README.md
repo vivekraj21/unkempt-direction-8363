@@ -11,6 +11,7 @@
 - Fetching of fake API Server to stream video.
 
 # Area of Responsibility :
+- Lead the team.
 - Responsible for creating Home Page.
 - Fetching of fake API Server to collect data & play video.
 
