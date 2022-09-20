@@ -18,4 +18,5 @@
 # Tech-Stack :
 Css  |  HTML  | JavaScript  | Git
 
+# Deployed - https://coruscating-sprinkles-12d10b.netlify.app/index.html
 
