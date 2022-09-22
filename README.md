@@ -16,7 +16,7 @@
 - Fetching of fake API Server to collect data & play video.
 
 # Tech-Stack :
-Css  |  HTML  | JavaScript  | Git
+CSS  |  HTML  | JavaScript  | Git
 
 - Deployed - https://coruscating-sprinkles-12d10b.netlify.app/index.html
 
